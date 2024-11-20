@@ -35,20 +35,30 @@
             right: 100px;
                 & .redesSociais{
                     width: 40px;
-                    margin-left:10px;
-                                
-                    
-                    
-                    
-                    
-                }
+                    margin-left:10px; 
+                } 
         }
 }
 nav{
     position: absolute;
-    & #logoIFB{
-        height: 80px;
-        margin-top: 9pc;
-        margin-left: 20px;
-    }
+    width: 100%;
+    display: flex;
+    
+        & #logoIFB{
+            height: 80px;
+            margin-top: 9pc;
+            margin-left: 20px;
+        }
+        & #barraNavegacao{
+            background-color: #2F9E41;
+            display: flex;
+            width: 500px;
+            position: absolute;
+            right:0%;
+            border-radius: 10px 0px 0px 10px;
+            margin-top: 200px;
+            
+            
+        }
+
 }
