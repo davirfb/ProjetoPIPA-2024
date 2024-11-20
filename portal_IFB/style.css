@@ -1,16 +1,37 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{margin:0}
+body{
+    background-color: #E3FFE8;
+    
+    
+
+}
+a{
+    text-decoration: none;
+}
+h2{ 
+    font-family:Inter,Helvetica, sans-serif;    
+}
+h1{
+    font-family:Inter,Helvetica, sans-serif; 
+    color: white;   
+}
+/*portal do governo*/
  #portalGoverno{
     background-color:#7F7F7F;
         font-family:Inter,Helvetica, sans-serif;
         text-align: center;
-        color:white;  
         width: 100%;
-        
+        color: white;     
     }
+#portalGoverno:hover,#portalGoverno:active{
+        background-color:#3e3e3e;
+}    
+/*div fixada*/  
 #fixadoTopo{
-    background-color: #d9d9d9;
+    background-color: #EBEBEB;
     display: flex;
     width: 100%;
     height: 250px;
@@ -22,43 +43,121 @@
             font-family: Arial, Helvetica, sans-serif;
             padding: 10px 0px 0px 15px;
             border-radius: 0px 10px 10px 0px;
-            color: white;
+            color: black;
             margin: 20px 0px;
-
+            box-shadow:0px 3px 4px grey;
+            & p {
+                color: white;
+            }
+            & h1{
+                color:white
+            }          
         }
         & #div_redesSociais{
             
             height: 40px;
-            width: 160px;
+            width: 300px;
             margin-top: 50px;
+            padding: 10px ;
             position: absolute;
-            right: 100px;
+            right: 150px;
                 & .redesSociais{
                     width: 40px;
-                    margin-left:10px; 
+                    margin-left:30px;      
                 } 
         }
 }
+/*nav*/
 nav{
     position: absolute;
     width: 100%;
     display: flex;
-    
         & #logoIFB{
             height: 80px;
             margin-top: 9pc;
             margin-left: 20px;
         }
         & #barraNavegacao{
-            background-color: #2F9E41;
-            display: flex;
-            width: 500px;
             position: absolute;
+            display: flex;
+            background-color: #2F9E41;
+            width: 70%;
+            height:70px;
             right:0%;
             border-radius: 10px 0px 0px 10px;
-            margin-top: 200px;
-            
-            
+            margin-top: 150px;
+            box-shadow:0px 3px 4px grey;
+                & #botoes_nav{
+                    position: absolute;
+                    display: flex;
+                    width: 80%;
+                    margin:21px 0px 0px 40px;
+                }
+                & h2{
+                    color:white;
+                    padding: 10px 50px;
+                    background-color: #113817;
+                    background-color: rgba(0,0,0,25%);
+                    border-radius: 10px 10px 0px 0px;
+                    margin-right: 20px;
+                    
+                }
+                & h2:hover,h2 :active{
+                    background-color: rgba(0,0,0,40%);
+                    
+                }
         }
-
 }
+
+#div_alinhamento{
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+        & #body,#atualizacoes{
+        background-color: #EBEBEB;
+        width: 50%;
+        min-height: 100px;
+        overflow: hidden;
+        margin:0% 0% 10% 0%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        padding: 20px 10px;
+        box-shadow:0px 3px 4px grey;   
+        --br-x:10px;
+        --br-y:10px;
+        border-radius: var(--br-x) var(--br-y);
+        border-top-left-radius:0px ;
+        border-top-right-radius:0px ;
+        }
+        & #atualizacoes{
+            border-radius: var(--br-x) var(--br-y);
+            border-bottom-left-radius:0px ;
+            border-bottom-right-radius:0px ;
+            margin: 22% 0% 0% 0%;
+            height: 200px;
+            background-color: green;
+        }
+        & #body{
+            position: relative;
+            display: flex;
+                & #destaques_titulo{
+                    left:0%;
+                    background-color: green;
+                    position: absolute;
+                    margin-left: 20px;
+                    border-radius: 8px 8px 0px 0px;
+                    padding: 8px;
+                    box-shadow:0px 3px 4px grey;
+
+                }        
+        }
+}
+    
+
+
+
+
