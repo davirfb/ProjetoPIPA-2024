@@ -6,8 +6,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     const postagens = document.getElementById('postagens');
     postagens.innerHTML = posts.map(post => `
       <article class="post">
-        <h2><a href="post.html?id=${post.id}">${post.titulo}</a></h2>
-        <p>${post.previa}</p>
+        <div class="header-postagem">
+            <img src="${post.imagem}" alt="${post.titulo}" class="imagem-postagem"/>
+            <h2><a href="post.html?id=${post.id}">${post.titulo}</a></h2>
+        </div>
+         <p>${post.previa}</p>
       </article>
     `).join('');
   });
@@ -27,6 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           <p>Postado em ${post.data}</p>
         `;
         document.getElementById('postContent').innerHTML = `
+          <img src="${post.imagem}" alt="${post.titulo}" class="imagem-postagem-grande"/> 
           <p>${post.conteudo}</p>
         `;
       } else {
