@@ -25,10 +25,8 @@ header{
     background-color:#D9D9D9;  
     backdrop-filter: blur(20px); /* Aplica o desfoque ao fundo */
     background-color: rgba(20, 20, 20, 0.2); /* Cor semi-transparente */
-   
     position: sticky;
     z-index: 3;
-
     top:0px;
         #logoAlign{
             display: flex;
@@ -65,12 +63,13 @@ nav{
 .secao1{
 display: block;
 justify-content: space-between; 
-height: 110vh;
+height: 80rem;
 align-items: center;
-margin-bottom: 5%;
+font-size: 2rem;
     .frase{
         padding: 10%; 
-        position: absolute;
+
+        position:absolute;
         text-align: center;
         justify-content: center;
         left:50%;
@@ -82,7 +81,7 @@ margin-bottom: 5%;
         
         h1{
             
-            font-size: 320%;
+            font-size: 4rem;
             font-weight: bold;    
         }
         
@@ -98,7 +97,6 @@ margin-bottom: 5%;
         
     }  
     #img2{
-        top:10%;
         position: absolute;
         width: 50%;  
         opacity: 50%;
@@ -109,13 +107,16 @@ margin-bottom: 5%;
     }
 }
 
-#title{ 
+.title{ 
     text-align: center;
+    
+    
 }
 
 .secao2{
+  
     display: flex;
-    height:100vh;
+    height:55rem;
     justify-content: center;
     background-color: #ECECEC;
     .destaquesGeral{
@@ -129,14 +130,13 @@ margin-bottom: 5%;
 
 .containerSlide {
     width: 100%;
-    position: absolute;
-  
+    height: 20rem;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    transform: translateY(-800%);
+    transform: translatey(-13rem) ;
+    
    
   }
 input[type=radio] {
@@ -177,7 +177,7 @@ input[type=radio] {
     transform: translatex(-160%) scale(.8);
     
     margin-top: 10%;
-    width: 30%;
+    width: 40%;
     opacity:0.4 ;
     z-index: 0;
     position: absolute;
@@ -188,7 +188,7 @@ input[type=radio] {
   #item-3:checked ~ .cards #song-1 {
     transform: translatex(160%) scale(.8);
     margin-top: 10%;
-    width: 30%;
+    width: 40%;
     opacity: .4;
     z-index: 0;
     position: absolute;
@@ -201,13 +201,61 @@ input[type=radio] {
     opacity: 1;
     z-index: 1;
     position: absolute;
+    width: 50rem;
     
     img {
       box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
     }
   }
-  .secao3{
-    min-height: 100vh;
-    background-color:#D9D9D9;
-    margin-top: 30vh;
+.secao3{  
+  margin-top: 20rem;
+  height: 100rem;
+  h1{
+    text-align: center;
+    font-size: 3.5rem;
   }
+  .suporte{
+
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      height: 100rem;
+      width: 100%;
+  .esquerda,.direita{
+      width: 100%;
+      font-size:2rem;
+          h2{
+              font-size: 3rem;
+              color: green;
+              
+          }
+          div{
+              padding:20%;
+          }
+  }
+  .linha{
+      background-color: black;
+      width: 4px;
+      height: 80rem;
+  }
+  .esquerda{
+    
+      display: flex;
+      justify-content: right;
+      text-align: right;
+      div{
+          animation: fadeInLeft ;
+          animation-duration: 1s;
+          
+      }
+  }
+  .direita{
+      div{
+          align-items: center;
+          height: 50%;
+          animation: fadeInRight ;
+          animation-duration: 1s;
+      }
+  }
+  }
+}
