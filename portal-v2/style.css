@@ -61,19 +61,19 @@ nav{
 }
 
 .secao1{
+     
 display: block;
 justify-content: space-between; 
-height: 80rem;
+height: 70rem;
 align-items: center;
 font-size: 2rem;
+transform: translatey(-10%);
     .frase{
         padding: 10%; 
-
         position:absolute;
         text-align: center;
         justify-content: center;
         left:50%;
-        margin-top: 5%;
         transform: translateX(-50%);
         z-index: 1;
         width: 50%;
@@ -210,42 +210,47 @@ input[type=radio] {
 .secao3{  
   margin-top: 20rem;
   height: 100rem;
+  
   h1{
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10%;
+    
   }
   .suporte{
-
+    
       align-items: center;
       justify-content: center;
       display: flex;
-      height: 100rem;
+      height: 40rem;
       width: 100%;
   .esquerda,.direita{
       width: 100%;
-      font-size:2rem;
+      font-size:1.2rem;
           h2{
-              font-size: 3rem;
+              font-size: 2rem;
               color: green;
+            font-weight: bold;
               
           }
-          div{
-              padding:20%;
-          }
+      
   }
   .linha{
       background-color: black;
       width: 4px;
-      height: 80rem;
+      height: 45rem;
+      
   }
   .esquerda{
-    
+
       display: flex;
       justify-content: right;
       text-align: right;
       div{
           animation: fadeInLeft ;
           animation-duration: 1s;
+          padding:0 4% 0 20%;
           
       }
   }
@@ -255,7 +260,24 @@ input[type=radio] {
           height: 50%;
           animation: fadeInRight ;
           animation-duration: 1s;
+          padding:20% 20% 20% 4%;
       }
   }
   }
+}
+.secao4{
+    height: 100rem;
+    width: 100%;
+    .cursos{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        background-color: aqua;
+    }
+    .cards{
+        margin: 2px;
+        width: 100%;
+        background-color: #C90C0F;
+
+    }
 }
