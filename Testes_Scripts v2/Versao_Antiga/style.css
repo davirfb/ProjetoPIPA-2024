@@ -1,0 +1,96 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    background-color: #c2e3c5;
+  }
+.container-site{
+     width: 80%; /* The width of the site content */
+    max-width: 1000px; /* Optional: Limit maximum width for larger screens */
+    background-color: #EBEBEB; /* Site background color */
+    border-left: 5px solid #484848; /* Border on the left */
+    border-right: 5px solid #484848; /* Border on the right */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+    min-height: 100vh; /* Ensure the site spans the full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2F9E41;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  header {
+    text-align: center;
+    background: #D9D9D9;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header input {
+    margin-top: 10px;
+    padding: 5px;
+    width: 60%;
+  }
+  .header-postagem{
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .header-postagem img{
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .imagem-postagem{
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+  .imagem-postagem-grande{
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+  }
+  main {
+    padding: 20px;
+  }
+  
+  main .post {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #2F9E41;
+    color: white;
+  }

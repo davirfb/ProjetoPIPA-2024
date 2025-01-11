@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",Helvetica,Arial,  sans-serif;
+    list-style: none;
+    
+    
+}
+
+.vermelho{
+    color:#C90C0F;
+}
+.verde{
+    color:#2F9E41;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    height: 65px;
+    background-color:#D9D9D9;  
+    backdrop-filter: blur(20px); /* Aplica o desfoque ao fundo */
+    background-color: rgba(20, 20, 20, 0.2); /* Cor semi-transparente */
+    position: sticky;
+    z-index: 3;
+    top:0px;
+        #logoAlign{
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            width: 100%;   
+            
+            #logo{
+                
+                height: 60px;
+            }
+        }
+}  
+
+nav{
+  
+    display: block;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:center ;
+    position: sticky;
+    top:70px;
+    z-index: 2;
+    
+        ul{
+            display: flex;
+            gap:20;
+        }
+ 
+       
+}
+
+.secao1{
+     
+display: block;
+justify-content: space-between; 
+height: 70rem;
+align-items: center;
+font-size: 2rem;
+transform: translatey(-10%);
+    .frase{
+        padding: 10%; 
+        position:absolute;
+        text-align: center;
+        justify-content: center;
+        left:50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        width: 50%;
+        max-height: 50%;
+        
+        h1{
+            
+            font-size: 4rem;
+            font-weight: bold;    
+        }
+        
+        
+    }
+    #img1{
+        top:10%;
+        position: absolute;
+        width: 45%;  
+        opacity: 50%; 
+        margin-top: 2%;
+        
+        
+    }  
+    #img2{
+        position: absolute;
+        width: 50%;  
+        opacity: 50%;
+        top:60vh;
+        right: 0;
+        width: 80%;
+        
+    }
+}
+
+.title{ 
+    text-align: center;
+    
+    
+}
+
+.secao2{
+  
+    display: flex;
+    height:55rem;
+    justify-content: center;
+    background-color: #ECECEC;
+    .destaquesGeral{
+        margin-top:3%;
+        width:100%;
+        display: flex;
+        justify-content:space-around;
+    }
+    
+}
+
+.containerSlide {
+    width: 100%;
+    height: 20rem;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatey(-13rem) ;
+    
+   
+  }
+input[type=radio] {
+    display: none;
+  }
+  
+  .card {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+  }
+  
+
+  
+  .cards {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #imgCarrossel {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    
+  }
+  
+  #item-1:checked ~ .cards #song-3, 
+  #item-2:checked ~ .cards #song-1, 
+  #item-3:checked ~ .cards #song-2 {
+    transform: translatex(-160%) scale(.8);
+    
+    margin-top: 10%;
+    width: 40%;
+    opacity:0.4 ;
+    z-index: 0;
+    position: absolute;
+  }
+  
+  #item-1:checked ~ .cards #song-2, 
+  #item-2:checked ~ .cards #song-3, 
+  #item-3:checked ~ .cards #song-1 {
+    transform: translatex(160%) scale(.8);
+    margin-top: 10%;
+    width: 40%;
+    opacity: .4;
+    z-index: 0;
+    position: absolute;
+  }
+  
+  #item-1:checked ~ .cards #song-1, 
+  #item-2:checked ~ .cards #song-2, 
+  #item-3:checked ~ .cards #song-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    width: 50rem;
+    
+    img {
+      box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+  }
+.secao3{  
+  margin-top: 20rem;
+  height: 100rem;
+  
+  h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10%;
+    
+  }
+  .suporte{
+    
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      height: 40rem;
+      width: 100%;
+  .esquerda,.direita{
+      width: 100%;
+      font-size:1.2rem;
+          h2{
+              font-size: 2rem;
+              color: green;
+            font-weight: bold;
+              
+          }
+      
+  }
+  .linha{
+      background-color: black;
+      width: 4px;
+      height: 45rem;
+      
+  }
+  .esquerda{
+
+      display: flex;
+      justify-content: right;
+      text-align: right;
+      div{
+          animation: fadeInLeft ;
+          animation-duration: 1s;
+          padding:0 4% 0 20%;
+          
+      }
+  }
+  .direita{
+      div{
+          align-items: center;
+          height: 50%;
+          animation: fadeInRight ;
+          animation-duration: 1s;
+          padding:20% 20% 20% 4%;
+      }
+  }
+  }
+}
+.secao4{
+    height: 100rem;
+    width: 100%;
+    .cursos{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        background-color: aqua;
+    }
+    .cards{
+        margin: 2px;
+        width: 100%;
+        background-color: #C90C0F;
+
+    }
+}
+.secao1-pagina-posts{
+    display: block;
+    justify-content: space-between; 
+    height: 20rem;
+    align-items: center;
+    font-size: 2rem;
+    transform: translatey(-10%);
+        .frase{
+            padding: 10%; 
+            position:absolute;
+            text-align: center;
+            justify-content: center;
+            left:50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            width: 50%;
+            max-height: 50%;
+            
+            h1{
+                
+                font-size: 4rem;
+                font-weight: bold;    
+            }  
+        }
+        #img1{
+            top:10%;
+            position: absolute;
+            width: 45%;  
+            opacity: 50%; 
+            margin-top: 1%;
+            z-index: 2;
+            
+        }  
+    }
+    .secao2-pagina-posts{
+        z-index:5;
+        display: flex;
+        height:55rem;
+        justify-content: center;
+        background-color: #ECECEC;
+        .destaquesGeral{
+            margin-top:3%;
+            width:100%;
+            display: flex;
+            justify-content:space-around;
+        }
+        
+    }
