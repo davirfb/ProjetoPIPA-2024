@@ -14,50 +14,45 @@
 </head>
 
 <body>
+  <div class="menu">
+    <button class="border border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+      <svg fill="#7F7F7F" width="60px" height="70px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M21,17 C21.5522847,17 22,17.4477153 22,18 C22,18.5522847 21.5522847,19 21,19 L3,19 C2.44771525,19 2,18.5522847 2,18 C2,17.4477153 2.44771525,17 3,17 L21,17 Z M21,11 C21.5522847,11 22,11.4477153 22,12 C22,12.5522847 21.5522847,13 21,13 L3,13 C2.44771525,13 2,12.5522847 2,12 C2,11.4477153 2.44771525,11 3,11 L21,11 Z M21,5 C21.5522847,5 22,5.44771525 22,6 C22,6.55228475 21.5522847,7 21,7 L3,7 C2.44771525,7 2,6.55228475 2,6 C2,5.44771525 2.44771525,5 3,5 L21,5 Z" />
+      </svg>
+    </button>
 
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+      id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Try scrolling the rest of the page to see this option in action.</p>
+      </div>
+    </div>
+  </div>
   <header>
     <div id="logoAlign">
       <img id="logo" src="img/logoPrincipal.png">
     </div>
-    <button class="btn btn-secondary  bg-transparent border border-0 text-success" type="button"
-      data-bs-toggle="dropdown" aria-expanded="false" style="z-index: 4;">
-      <svg width="40px" height="40px" viewBox="0 -5 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink">
 
-        <title>menu</title>
-        <desc>Created with Sketch.</desc>
-        <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="ui-gambling-website-lined-icnos-casinoshunter" transform="translate(-2294.000000, -159.000000)"
-            fill="#7F7F7F" fill-rule="nonzero">
-            <g id="1" transform="translate(1350.000000, 120.000000)">
-              <path
-                d="M974,57 C975.104569,57 976,57.8954305 976,59 C976,60.1045695 975.104569,61 974,61 L946,61 C944.895431,61 944,60.1045695 944,59 C944,57.8954305 944.895431,57 946,57 L974,57 Z M974,48 C975.104569,48 976,48.8954305 976,50 C976,51.1045695 975.104569,52 974,52 L946,52 C944.895431,52 944,51.1045695 944,50 C944,48.8954305 944.895431,48 946,48 L974,48 Z M974,39 C975.104569,39 976,39.8954305 976,41 C976,42.1045695 975.104569,43 974,43 L946,43 C944.895431,43 944,42.1045695 944,41 C944,39.8954305 944.895431,39 946,39 L974,39 Z"
-                id="menu">
 
-              </path>
-            </g>
-          </g>
-        </g>
-      </svg>
-    </button>
-    <ul class="dropdown-menu bg-body-secondary rounded-0">
-      <li><a class="dropdown-item text-black-50 fs-5 text " href="#">Action</a></li>
-      <li><a class="dropdown-item text-black-50 fs-5 text" href="#">Another action</a></li>
-      <li><a class="dropdown-item text-black-50 fs-5 text" href="#">Something else here</a></li>
-      <li>
-        <hr class="dropdown-divider text-black-50" fs-5 text>
-      </li>
-      <li><a class="dropdown-item text-black-50 " href="#">Separated link</a></li>
-    </ul>
-   
     <div class="input-group mb-3 w-25 p-2" style="margin-top:0.8%;">
       <div class="input-group-prepend">
         <button class="btn btn-outline-success rounded-start " type="button">
-          <svg fill="#000000" width="17px" height="20px" viewBox="-2.5 -2.5 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-search"><path d='M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z'/></svg></button>
+          <svg fill="#000000" width="17px" height="20px" viewBox="-2.5 -2.5 24 24" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMinYMin" class="jam jam-search">
+            <path
+              d='M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z' />
+          </svg></button>
       </div>
-      <input type="text" class="form-control " placeholder="Pesquisa... " aria-label="" aria-describedby="basic-addon1 ">
+      <input type="text" class="form-control d-inline-flex focus-ring focus-ring-success " placeholder="Pesquisa... "
+        aria-label="" aria-describedby="basic-addon1 ">
     </div>
- 
+
   </header>
   <nav>
     <ul>
@@ -135,12 +130,12 @@
   <!--seção1-->
   <section class="secao1">
     <img id="img1" src="img/imgPrincipal1.png">
-    <div class="frase">
+    <div class="frase ">
       <h1 class="verde">Cursos gratuitos para o seu futuro!</h1>
       <h3>O <b class="verde">i</b><b class="vermelho">FB</b> no ano de 2025 traz <b class="vermelho">2900</b> vagas nas
         10 regiões de Brasília para você de forma 100% gratuita!
         Venha fazer sua história na federal </h3>
-      <button type="button" class="btn btn-success" >Inscrevase-agora</button>
+      <button type="button" class="btn btn-success">Inscrevase-agora</button>
     </div>
     <img src="img/imgPrincipal2.png" id="img2">
 
@@ -151,7 +146,7 @@
 
   <!--seção2-->
   <div class="title">
-    <h2>Destaques <b class="verde">I</b><b class="vermelho">FB</b></h2>
+    <h1>Destaques <b class="verde">I</b><b class="vermelho">FB</b></h1>
   </div>
 
   <section class="secao2">
@@ -161,7 +156,7 @@
         <div class="card text-center" style="width: 90%;">
           <img src="img/imgDestaques1.png" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h4 class="card-title">Card title</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <a href="#" class="btn btn-success">Leia mais</a>
@@ -172,7 +167,7 @@
         <div class="card text-center" style="width: 90%;">
           <img src="img/imgDestaques2.png" class="card-img-top" alt="...">
           <div class="card-body ">
-            <h5 class="card-title">Card title</h5>
+            <h4 class="card-title">Card title</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <a href="#" class="btn btn-success">Leia mais</a>
@@ -183,7 +178,7 @@
         <div class="card text-center" style="width: 90%;">
           <img src="img/imgDestaques2.png" class="card-img-top" alt="...">
           <div class="card-body ">
-            <h5 class="card-title">Card title</h5>
+            <h4 class="card-title">Card title</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <a href="#" class="btn btn-success">Leia mais</a>
@@ -191,7 +186,7 @@
         </div>
       </div>
     </div>
-   
+
   </section>
 
   <div class="containerSlide">
@@ -212,48 +207,118 @@
   </div>
 
   <!--seção3-->
-  
-  <section class="secao3" >
-    <h1>Como funciona o Processo Seletivo?</h1>
+
+  <section class="secao3">
+    <h1 class="title">Como funciona o Processo Seletivo?</h1>
     <div class="suporte">
       <div class="esquerda">
-          <div>
-            <h2>resultados e recursos</h2>
-            <p>Nessa etapa, o candidato terá acesso à sua posição na lista de classificação do curso selecionado. Caso identifique algum problema, <b>poderá apresentar um recurso</b>, conforme necessário.</p>
-          </div>
+        <div>
+          <h2>resultados e recursos</h2>
+          <p>Nessa etapa, o candidato terá acesso à sua posição na lista de classificação do curso selecionado. Caso
+            identifique algum problema, <b>poderá apresentar um recurso</b>, conforme necessário.</p>
+        </div>
       </div>
-    
-    <div class="linha"></div>
-    
+
+      <div class="linha"></div>
+
       <div class="direita">
-          <div>
-            <h2>Inscrição</h2>
-            <p>Durante o período de inscrições, o candidato tem acesso ao <a class="verde">sistema de inscrição</a> para registrar seus dados pessoais. É possível realizar alterações na inscrição várias vezes, porém <b>apenas a última atualização será considerada válida.</b> </p>
-          </div>
-    
-    
-          <div>
-            <h2>chamadas para matrícula</h2>
-            <p>Depois de encerrada a fase de recursos, as Convocações serão divulgadas, permitindo que os candidatos aprovados efetuem a matrícula e iniciem seus estudos no IFB.</p>
-          </div>  
-        
+        <div>
+          <h2>Inscrição</h2>
+          <p>Durante o período de inscrições, o candidato tem acesso ao <a href="#" class="verde">sistema de
+              inscrição</a> para registrar seus dados pessoais. É possível realizar alterações na inscrição várias
+            vezes, porém <b>apenas a última atualização será considerada válida.</b> </p>
+        </div>
+
+
+        <div>
+          <h2>chamadas para matrícula</h2>
+          <p>Depois de encerrada a fase de recursos, as Convocações serão divulgadas, permitindo que os candidatos
+            aprovados efetuem a matrícula e iniciem seus estudos no IFB.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
 
   <!--seção4-->
-   <section class="secao4">
-      <div class="cursos">
-        <div class="cards"></div>
-        <div class="cards"></div>
-        <div class="cards"></div>
-       
+  <section class="secao4">
+
+
+    <div class="tecnico">
+
+      <div class="card" style="width: 18%;">
+        <div class="card-body">
+          <h4 class="card-title">Subsequente</h4>
+          <p class="card-text">para quem já tem o Ensino Médio Completo e deseja aprender uma profissão.</p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18%;">
+        <div class="card-body">
+          <h4 class="card-title">Subsequente EAD</h4>
+          <p class="card-text">para quem já tem o Ensino Médio Completo epretende fazer o curso virutalmente.</p>
+
+
+
+        </div>
+      </div>
+      <div class="card" style="width: 18%;">
+        <div class="card-body">
+          <h4 class="card-title">Integrados </h4>
+          <p class="card-text">Para quem deseja cursar
+            as disciplinas do ensino
+            médio e aprender uma
+            profissão ao mesmo tempo.</p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18%;">
+        <div class="card-body">
+          <h4 class="card-title">Concomitantes </h4>
+          <p class="card-text">Para quem faz o ensino médio em outra escola e quer estudar em um curso técnicodo IFB.
+          </p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18%;">
+        <div class="card-body">
+          <h4 class="card-title">Integrados-PROEJA</h4>
+          <p class="card-text"> para jovens e adultos concluírem o ensino médio e aprender uma profissão.</p>
+
+        </div>
       </div>
 
-   </section>
+    </div>
+    <div class="sup">
+
+      <div class="card" style="width: 18%;">
+        <div class="card-body">
+          <h4 class="card-title">graduação </h4>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18%;">
+        <div class="card-body">
+          <h4 class="card-title">2 gradução </h4>
+          <p class="card-text">Destinado a quem já
+            concluiu uma primeira
+            graduação e deseja
+            cursar outra.</p>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </section>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+
 </html>
