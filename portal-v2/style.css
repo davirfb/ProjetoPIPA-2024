@@ -22,12 +22,8 @@
     display: flex;
     align-items: center;
         
-        .button{
-            
-        }
+  
 }
-    
-
 header{
     display: flex;
     align-items: center;
@@ -37,40 +33,57 @@ header{
     background-color:#D9D9D9;  
     backdrop-filter: blur(20px); 
     background-color: rgba(20, 20, 20, 0.2); 
-    position: sticky;
-    z-index: 3;
+    position: fixed;
+    z-index: 1;
     top:0px;
-        #logoAlign{
+        .logoAlign{
             display: flex;
             position: absolute;
             justify-content: center;
             width: 100%;   
             
             #logo{
-                
                 height: 60px;
             }
         }
-}  
+}
+
 
 nav{
-  
-    display: block;
     display: flex;
     width: 100%;
-    align-items: center;
-    justify-content:center ;
     position: sticky;
-    top:70px;
-    z-index: 2;
-    
-        ul{
-            display: flex;
-            gap:20;
+    z-index: 3;
+    top:65px;
+    align-items: center;
+    justify-content: center;
+   
+
+        .navBotoes{
+            
+            backdrop-filter: blur(7px); 
+            background-color: rgba(20, 20, 20, 0.1); 
+            padding: 0px 30px;
+            border-radius: 0 0  5px 5px;
+            z-index: 3;     
         }
- 
+        a{
+            font-weight: bold;
+            font-size:1.3vw;
+            text-decoration:none ;
+            color:#2F9E41; 
+        }
        
+        ul{
+            gap: 20px;
+            display: flex;
+            margin: 0;
+            padding: 0;  
+        }
+        
 }
+
+
 
 .secao1{
      
@@ -78,11 +91,10 @@ display: block;
 justify-content: space-between; 
 height: 70rem;
 align-items: center;
-font-size: 2rem;
+font-size: 2vw;
 transform: translatey(-10%);
     .frase{
         padding: 20% 30%;
-        
         position:absolute;
         text-align: center;
         align-items: center;
@@ -94,19 +106,20 @@ transform: translatey(-10%);
         
         h1{
             
-            font-size: 4rem;
+            font-size: 4vw;
             font-weight: bold;    
         }
         
         
     }
-    #img1{
+    .img1{
         top:3%;
         position: absolute;
         width: 45%;  
         height: auto;
         opacity: 50%; 
         margin-top: 2%;
+        z-index: -1;
         
         
     }  
@@ -261,7 +274,7 @@ input[type=radio] {
       justify-content: right;
       text-align: right;
       div{
-          animation: fadeInLeft ;
+          
           animation-duration: 1s;
           padding:0 10% 0 20%;
           
@@ -271,12 +284,16 @@ input[type=radio] {
       div{
           align-items: center;
           height: 50%;
-          animation: fadeInRight ;
+          
           animation-duration: 1s;
           padding:20% 20% 20% 10%;
       }
   }
   }
+}
+.animacao3{
+    animation: fadeInRight;
+
 }
 .secao4{
     
@@ -299,4 +316,5 @@ input[type=radio] {
         .sup{
             justify-content: center;
         }
-}
+        
+}   
