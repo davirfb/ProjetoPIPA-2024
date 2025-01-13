@@ -361,12 +361,13 @@ input[type=radio] {
 }   
 .mais-noticias{
     padding:1%;
-    margin-bottom: 33rem;
+    margin-bottom: 11rem;
     background-color: #ECECEC;
         button{
             margin: 0 auto;
             display: block;
         }
+        a{text-decoration:none;}
 }
 .botao-centralizado{
     padding:1%;
@@ -375,6 +376,7 @@ input[type=radio] {
             margin: 0 auto;
             display: block;
         }
+    a{text-decoration:none;}
 }
 #barranav{
     transition: top 0.3s;
@@ -405,6 +407,7 @@ footer{
 }
 .gptCode{
     height: 150px;
+    border-radius: 10px;
 }
 .container-footer{
     max-width: 1400px;
@@ -479,6 +482,9 @@ footer{
 }
 .footer-col .ifb-footer{
     width: 100%;
+}
+.a{
+    text-decoration: none;
 }
 
 /* Responsivo */

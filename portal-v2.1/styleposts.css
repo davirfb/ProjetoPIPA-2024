@@ -91,9 +91,21 @@ nav{
         }
         
 }
+.navBotoes a:hover{
+    color: #C90C0F;
+    transition: all 0.3s ease;
+}
 
 
-
+.botao-centralizado{
+    padding:1%;
+    margin-top: 2.5rem;
+        button{
+            margin: 0 auto;
+            display: block;
+        }
+    a{text-decoration:none;}
+}
 
 .secao1-pagina-posts{
     display: block;
@@ -144,14 +156,7 @@ nav{
 
         justify-content: center;
         background-color: #ECECEC;
-        .lista-postagens{
-            margin-top:3%;
-            width:100%;
-            display: grid;
-            gap:20px;
-            padding:1%
-            /* justify-content:space-around; */
-        }
+        padding:2%;
         
     }
     .imagem-postagem-grande{
@@ -277,6 +282,7 @@ nav{
     }
     .gptCode{
         height: 150px;
+        border-radius: 10px;
     }
     .container-footer{
         max-width: 1400px;
@@ -384,4 +390,7 @@ nav{
             border-radius: 8px;
     
         }
+    }
+    .espacado{
+        margin-bottom:4%;
     }

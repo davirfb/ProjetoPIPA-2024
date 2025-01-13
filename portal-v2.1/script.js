@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       pagination.innerHTML = `
         <div class="d-flex justify-content-center mt-4">
-          <button class="btn btn-primary mx-2 ${currentPage === 1 ? 'disabled' : ''}" id="prevPage">Previous</button>
-          <button class="btn btn-primary mx-2 ${currentPage === totalPages ? 'disabled' : ''}" id="nextPage">Next</button>
+          <button class="btn btn-success mx-2 espacado ${currentPage === 1 ? 'disabled' : ''}" id="prevPage">Página Anterior</button>
+          <button class="btn btn-success mx-2 espacado ${currentPage === totalPages ? 'disabled' : ''}" id="nextPage">Próxima Página</button>
         </div>
       `;
 
