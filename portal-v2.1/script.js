@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const destaquesContainer = document.getElementById('destaques');
   destaquesContainer.innerHTML = `
-    <div class="row">
+   <div class="row justify-content-center">
       ${destaquePosts.map(post => `
         <div class="col-md-4 mb-4">
           <div class="card h-100">
