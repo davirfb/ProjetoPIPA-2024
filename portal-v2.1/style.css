@@ -159,7 +159,7 @@ transform: translatey(-10%);
 .secao2{
   
     display: flex;
-    height:33rem;
+    height:44rem;
     justify-content: center;
     background-color: #ECECEC;
     .destaquesGeral{
@@ -362,6 +362,7 @@ input[type=radio] {
 .mais-noticias{
     padding:1%;
     margin-bottom: 11rem;
+
     background-color: #ECECEC;
         button{
             margin: 0 auto;
