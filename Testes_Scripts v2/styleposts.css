@@ -183,7 +183,7 @@ nav{
                 width: 45%;  
                 opacity: 30%; 
                 margin-top: 1%;
-                z-index: 2;
+                z-index: -1;
                 
             }  
         }
@@ -248,4 +248,6 @@ nav{
                 display: block;
             }
     }
-            
+    #barranav{
+        transition: top 0.1s;
+    }

@@ -1,3 +1,14 @@
+var prevScrollpos = window.scrollY;
+window.onscroll = function() {
+  var currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("barranav").style.top = "65px";
+  } else {
+    document.getElementById("barranav").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+} 
+//Renderiza os posts na pagina de noticias
 document.addEventListener("DOMContentLoaded", async () => {
   const resposta = await fetch('posts.json');
   const posts = await resposta.json();
