@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   destaquesContainer.innerHTML = `
    <div class="row justify-content-center">
       ${destaquePosts.map(post => `
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
+        <div class="col-md-4 mb-4 ">
+          <div class="card h-100 w-100" >
             <img class="card-img-top" src="${post.imagem}" alt="${post.titulo}">
             <div class="card-body">
               <h5 class="card-title">
