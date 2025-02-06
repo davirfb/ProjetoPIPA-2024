@@ -1,56 +1,16 @@
 *{
-    margin: 0;
+    border:0;
     padding: 0;
 
-    
 }
-h1{
-  text-align: center;
-  
+
+col{
+
 }
-.secao3{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 100rem;
-    
-    
-}
-.esquerda,.direita{
-    height: 80rem;
+#bagulho{
     width: 100%;
-    
-    font-size:2rem;
-        h2{
-            font-size: 3rem;
-            color: green;
-            
-        }
-        div{
-            padding:90px;
-        }
-}
-.linha{
-    background-color: black;
-    width: 4px;
-    height: 80rem;
-}
-.esquerda{
+    background-color: aqua;
     display: flex;
-    justify-content: right;
-    
-    text-align: right;
-    div{
-        animation: fadeInLeft ;
-        animation-duration: 1s;
-        margin-top:35%; 
-    }
-}
-.direita{
-    div{
-        align-items: center;
-        height: 50%;
-        animation: fadeInRight ;
-        animation-duration: 1s;
-    }
+    flex-wrap: wrap;
+
 }

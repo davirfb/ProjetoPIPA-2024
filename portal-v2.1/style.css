@@ -181,23 +181,18 @@ margin-top:100px ;
 }
 
 .secao2{
-  
     display: flex;
-    
     justify-content: center;
     background-color: #ECECEC;
     .destaquesGeral{
-       
         padding: 20px;
-
+          
     }
     
 }
 .secaoCampus{
     height:45rem ;
-   
     width: 100%;
-    
 }
 .containerSlide {
     transform-style: preserve-3d;
