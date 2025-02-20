@@ -30,7 +30,16 @@ const urlsToCache = [
   "./img/imgPrincipal1.png",
   "./img/imgPrincipal2.png",
   "./img/imgPrincipal3.png",
-  "./img/imgs-campus",
+  "./img/imgs-campus/C-Brasilia.jpg",
+  "./img/imgs-campus/C-Ceilandia.jpg",
+  "./img/imgs-campus/C-Estrutural.jpg",
+  "./img/imgs-campus/C-Gama.jpg",
+  "./img/imgs-campus/C-Planaltina.jpg",
+  "./img/imgs-campus/C-Recanto.jpg",
+  "./img/imgs-campus/C-riachofundo2.jpg",
+  "./img/imgs-campus/C-Samambaia.jpg",
+  "./img/imgs-campus/C-Sao_sebastiao.jpg",
+  "./img/imgs-campus/C-Taguatinga.jpg",
   "./img/logoGPTCode.jpg",
   "./img/logoPrincipal.png",
   "./img/p-ass-estudantil.png",
@@ -44,7 +53,9 @@ const urlsToCache = [
   "./img/p-insc-abertas.png",
   "./img/p-oportunidade.png",
   "./img/p-res-final.png",
-  "./img/redesSociais"
+  "./img/redesSociais/instagram (2).png",
+  "./img/redesSociais/twitter (1).png",
+  "./img/redesSociais/youtube (1).png"
 ];
 self.addEventListener('install', event => {
   event.waitUntil(
