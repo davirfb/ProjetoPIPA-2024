@@ -71,3 +71,21 @@ self.addEventListener('fetch', event => {
       .then(response => response || fetch(event.request))
   );
 });
+self.addEventListener('install', event => {
+  console.log('SW: Installing...');
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => {
+        console.log('SW: Opened cache, adding files:', urlsToCache);
+        return cache.addAll(urlsToCache);
+      })
+      .then(() => {
+        console.log('SW: All files cached, skipping waiting');
+        return self.skipWaiting();
+      })
+      .catch(err => {
+        console.error('SW: Install failed:', err);
+        throw err;
+      })
+  );
+});
