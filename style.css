@@ -10,6 +10,9 @@
    
     
 }
+body{display: flex;
+flex-direction:column;
+}
 
 .vermelho{
     color:#C90C0F;
@@ -21,12 +24,18 @@
     position: fixed;
     z-index: 4;
     height: 65px;
+    
     display: flex;
     align-items: center;
         h5{
             color: #2F9E41;
             
-        }    
+        }
+        @media (max-width: 1000px) { 
+            .menu {
+              min-height: 80px; 
+            }
+          }
 }
 .menu-links{
     text-decoration:none ;
@@ -44,6 +53,7 @@ header{
     justify-content: right;
     width: 100%;
     height: 65px;
+    
     background-color:#D9D9D9;  
     backdrop-filter: blur(20px); 
     background-color: rgba(20, 20, 20, 0.2); 
@@ -60,7 +70,11 @@ header{
                 height: 60px;
             }
         }
-           
+        @media (max-width: 1000px) { 
+                header{
+                    min-height: 100px;
+                }
+            }       
 }
 
 
@@ -94,12 +108,16 @@ nav{
             margin: 0;
             padding: 0;  
         }
-        
+         
 }
 .navBotoes a:hover{
     color: #C90C0F;
     transition: all 0.3s ease;
 }
+@media screen and (max-width:1050px){
+nav{ display: none;
+}  
+}    
 
 
 
@@ -121,7 +139,7 @@ margin-top:100px ;
       
         
         h3{
-            font-size:clamp(1rem,2vw,3rem);
+            font-size:clamp(1.5rem,2vw,3rem);
             padding: 0vw 3vw;
         }
         
@@ -184,10 +202,19 @@ margin-top:100px ;
     display: flex;
     justify-content: center;
     background-color: #ECECEC;
+    
     .destaquesGeral{
         padding: 20px;
-          
+      
+        
+
+  
+        
     }
+    .row{
+       padding: 20px;
+    }
+   
     
 }
 
@@ -334,22 +361,19 @@ margin-top:100px ;
             width: 100%;
             height: auto;
             display: block;
-            background-color: black;
+            background-color: transparent;
             
         }
         
         .img {
-            filter: brightness(50%) contrast(120%);
-            flex: 1;
-            height: 30vh;
-            transition: all .3s;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            
-            
+            filter: none;
+            height: 50vh;
+            margin: 10px;
+            border-radius: 10px;
+            transition:none;
         }
+       
+        
         .infoCampus {
             font-size:clamp(0.3rem,1.0vw,2.5rem); 
             
@@ -366,14 +390,12 @@ margin-top:100px ;
            
        
         }
+        
+      
+       
         button,svg{
-            display: none;
-            
-            
-        }
-        button{
+            display: block;
             display: flex;
-            border:none;
         }
         .card{
             background-color: #2F9E41;
@@ -394,19 +416,16 @@ margin-top:100px ;
             width: 100%;
         }
             
-        .img:hover {
-            height: 50vh;
-            
-        }
+       
       } 
 }
 
 .secao3{  
-  margin-top: 20rem;
-  height: 70rem;
-  font-size:clamp(0.7rem,1.3vw,2.5rem); 
+ 
+  height: 80rem;
+  font-size:clamp(1.2rem,1.3vw,2.5rem); 
   h1{
-    margin-bottom: 10%;
+   
     
   }
   .suporte{
@@ -414,8 +433,8 @@ margin-top:100px ;
       align-items: center;
       justify-content: center;
       display: flex;
-      height: 40rem;
       width: 100%;
+      
   .esquerda,.direita{
       width: 100%;
       
@@ -430,7 +449,7 @@ margin-top:100px ;
   .linha{
       background-color: black;
       width: 4px;
-      height: 45rem;
+      height: 100%;
       
   }
   .esquerda{
@@ -455,7 +474,22 @@ margin-top:100px ;
       }
   }
   }
+  @media screen and (max-width:1000px){
+    
+    .suporte{
+        
+    }
+    .esquerda{
+        text-align:center;
+        
+    }
+    .direita{
+        text-align:right;
+        
+    }
 }
+}
+
 .animacao3{
     animation: fadeInRight;
 
