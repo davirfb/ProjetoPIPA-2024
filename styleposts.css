@@ -144,7 +144,7 @@ nav{
     .spacer{
         position:absolute;
         display: flex;
-        height:4rem;
+        height:6.4%;
         width: 100%;
         justify-content: center;
         background-color: #ECECEC;
@@ -154,6 +154,13 @@ nav{
     .secao2-pagina-posts{
         display: flex;
 
+        justify-content: center;
+        background-color: #ECECEC;
+        padding:2%;
+        
+    }
+    .secao-barra-pesquisa{
+        display: flex;
         justify-content: center;
         background-color: #ECECEC;
         padding:2%;

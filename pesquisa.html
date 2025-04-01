@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>Portal IFB</title>
+  <title>Portal IFB - Resultados</title>
 </head>
 
 <body>
@@ -72,7 +72,7 @@
       <svg width="40px" height="40px" viewBox="0 -5 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
-     
+        <title>menu</title>
     </button>
     <ul class="dropdown-menu bg-body-secondary rounded-0">
       <li><a class="dropdown-item text-black-50 fs-5 text " href="#">Action</a></li>
@@ -84,18 +84,6 @@
       <li><a class="dropdown-item text-black-50 " href="#">Separated link</a></li>
     </ul>
    
-<!--Barra de Pesquisa -->
-<div class="input-group mb-3 w-25 p-2" style="margin-top:0.8%;">
-  <form id="searchForm" action="pesquisa.html" method="GET" class="input-group">
-    <input type="text" name="query" class="form-control d-inline-flex focus-ring focus-ring-success" placeholder="Pesquisa..." aria-label="Pesquisa" aria-describedby="basic-addon1">
-    <button class="btn btn-outline-success" type="submit">
-      <svg fill="#000000" width="17px" height="20px" viewBox="-2.5 -2.5 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-search">
-        <path d='M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z' />
-      </svg>
-    </button>
-  </form>
-</div>
-<!--Barra de Pesquisa fim -->
  
   </header>
   <nav id="barranav">
@@ -119,28 +107,35 @@
 </nav>
 
   <!--seção 1-->
-  <section class="secao1-postagem" id="secao1">
+  <section class="secao1-pagina-posts">
     <img id="img1" src="img/imgPrincipal1.png">
-    <div class="frase" id="titulo-post">
-      <!-- Título do post aparece aqui -->
-    </div>
+    <div class="frase">
+      <h1 class="verde">Resultados da Pesquisa</h1>
+      </div>
   </section>
   <!--seção 2-->
-  <section class="secao2-pagina-posts">
-    <main id="postContent">
-      <!-- conteudo do post aparece aqui -->
-    </main>
-  </section>
-  <div class="botao-centralizado">
-    <a href="noticias.html">
-      <button type="button" class="btn btn-success">Voltar</button>
-    </a>
-  </div>
-  <div class="botaoVoltar" >
-      
 
+  <section class="secao-barra-pesquisa">
+    
+<!--Barra de Pesquisa -->
+<div class="input-group mb-3 w-25 p-2" style="margin-top:0.8%;">
+  <form id="searchForm" action="pesquisa.html" method="GET" class="input-group">
+    <input type="text" name="query" class="form-control d-inline-flex focus-ring focus-ring-success" placeholder="Pesquisa..." aria-label="Pesquisa" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-success" type="submit">
+      <svg fill="#000000" width="17px" height="20px" viewBox="-2.5 -2.5 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-search">
+        <path d='M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z' />
+      </svg>
+    </button>
+  </form>
+</div>
+<!--Barra de Pesquisa fim -->
+  </section>
+  <section class="secao2-pagina-posts">
+    <div id="search-results"></div>
+  </section>
+  <div class="botaoVoltar">
     <a href="#">
-  topo
+    Topo
     <svg fill="#000000" width="30px" height="40px" viewBox="0 0 36 36" version="1.1"  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>arrow-line</title>
     <path d="M27.66,15.61,18,6,8.34,15.61A1,1,0,1,0,9.75,17L17,9.81V28.94a1,1,0,1,0,2,0V9.81L26.25,17a1,1,0,0,0,1.41-1.42Z" class="clr-i-outline clr-i-outline-path-1"></path>
