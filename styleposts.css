@@ -97,6 +97,10 @@ nav{
     color: #C90C0F;
     transition: all 0.3s ease;
 }
+@media screen and (max-width:1050px){
+    nav{ display: none;
+    }  
+    }   
 
 
 .botao-centralizado{

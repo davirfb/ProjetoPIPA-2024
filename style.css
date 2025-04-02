@@ -491,6 +491,11 @@ margin-top:100px ;
     }
 }
 }
+@media screen and (max-width:1001px){
+    .secao3{
+        display: none;
+    }
+}
 
 .animacao3{
     animation: fadeInRight;
