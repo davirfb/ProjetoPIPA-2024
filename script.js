@@ -128,8 +128,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (post) {
       document.getElementById('titulo-post').innerHTML = `
         <img src="${post.imagem}" alt="${post.titulo}" class="imagem-postagem-grande" id="img-post"/> 
-        <h1>${post.titulo}</h1>
-        <h3>Publicado em ${post.data}</h3>
+        <h1 class="titulo-post">${post.titulo}</h1>
+        <h3 class="data-post">Publicado em ${post.data}</h3>
       `;
       document.getElementById('postContent').innerHTML = `
         <p class="conteudo-postagem">${post.conteudo}</p>
