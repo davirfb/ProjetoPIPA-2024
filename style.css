@@ -182,10 +182,13 @@ margin-top:100px ;
     @media screen and (max-width:700px){
         .img1{
             top:10%;
-           
+           display: none;
         }          
         .frase{ 
             padding: 8vw 10vw;
+        }
+        #img2{
+            display: none;
         }
     }
 
