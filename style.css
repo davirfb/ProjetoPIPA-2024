@@ -449,7 +449,7 @@ margin-top:100px ;
   .linha{
       background-color: black;
       width: 4px;
-      height: 100%;
+      height: 50pc;
       
   }
   .esquerda{
@@ -475,12 +475,14 @@ margin-top:100px ;
   }
   }
   @media screen and (max-width:1000px){
-    
+    .linha{
+        display: none;
+    }
     .suporte{
         
     }
     .esquerda{
-        text-align:center;
+        text-align:right;
         
     }
     .direita{
