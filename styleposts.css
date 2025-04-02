@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
+    
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -12,6 +13,7 @@
 .verde{
     color:#2F9E41;
 }
+
 .menu{
     position: fixed;
     z-index: 4;
@@ -108,7 +110,7 @@ nav{
 }
 
 .secao1-pagina-posts{
-    display: block;
+    
     justify-content: space-between; 
     height: 20rem;
     align-items: center;
@@ -134,29 +136,23 @@ nav{
         }
     }
     #img1{
+       
         top:10%;
         width: 45%;  
         opacity: 50%; 
-        z-index: 2;
+        position: relative;
         position: absolute;
     }  
 
-    .spacer{
-        position:absolute;
-        display: flex;
-        height:6.4%;
-        width: 100%;
-        justify-content: center;
-        background-color: #ECECEC;
-        z-index: 1;
-    }
+   
 
     .secao2-pagina-posts{
-        display: flex;
-
+        
         justify-content: center;
         background-color: #ECECEC;
         padding:2%;
+        
+        
         
     }
     .secao-barra-pesquisa{
@@ -164,7 +160,7 @@ nav{
         justify-content: center;
         background-color: #ECECEC;
         padding:2%;
-        
+       
     }
     .imagem-postagem-grande{
         width: 30%;
@@ -183,6 +179,7 @@ nav{
         align-items: center;
         font-size: 2rem;
         transform: translatey(-10%);
+     
             .frase{
                 padding: 10%; 
                 position:absolute;
@@ -209,15 +206,7 @@ nav{
                 z-index: 1;
                 transform: translateX(150%);
             }
-            #img1{
-                top:10%;
-                position: absolute;
-                width: 45%;  
-                opacity: 30%; 
-                margin-top: 1%;
-                z-index: -1;
-                
-            }  
+       
         }
         .imagem-postagem-grande{
             width: 30%;
@@ -235,7 +224,7 @@ nav{
             height: 33rem;
             align-items: center;
             font-size: 2rem;
-            transform: translatey(-10%);
+           
                 .frase{
                     padding: 10%; 
                     position:absolute;
