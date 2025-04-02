@@ -1,5 +1,5 @@
 Protótipo de um site com design modernizado para o Portal IFB, desenvolvido como parte do Projeto Prática Profissional (PIPA).
-O site concluido pode ser visualizado em: https://fernandofic.github.io/Portal-IFB-PIPA-2024/
+O site concluido pode ser visualizado em: https://davirfb.github.io/ProjetoPIPA-2024/
 Dispositivos suportados podem adicionar o site à página inicial em forma de PWA
 
 
